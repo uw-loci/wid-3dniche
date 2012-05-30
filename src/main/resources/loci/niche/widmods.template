@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<mets xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
+OBJID="urn:lsid:loci.wisc.edu:Dataset:LOCI-3DNICHE${submissionNumber}" LABEL="Title" 
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xmlns:mets="http://http://www.loc.gov/METS/"
+xmlns:mods="http://www.loc.gov/mods/v3"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://www.loc.gov/METS/">
+
+
+<dmdSec ID="LOCI-3DNICHE${submissionNumber}-BIB">
+	<mdWrap MIMETYPE="text/xml" MDTYPE="MODS" LABEL="MODS">
+		<xmlData>
+			<mods:mods>
+				<mods:titleInfo>
+					<mods:title>${title}</mods:title>
+				</mods:titleInfo>
+				<mods:name type="personal">
+					<mods:namePart>${lastName}, ${firstName}</mods:namePart>
+					<mods:affiliation>Laboratory for Optical and Computational Instrumentation (LOCI)</mods:affiliation>
+					<mods:role>
+						<mods:roleTerm type="text">Experimenter</mods:roleTerm>
+					</mods:role>
+				</mods:name>
+				<mods:typeOfResource>still image</mods:typeOfResource>
+				<mods:originInfo>
+					<mods:dateCreated encoding="iso8601">${date}</mods:dateCreated>
+
+				</mods:originInfo>
+				<mods:physicalDescription>
+					<mods:form authority="dct" authorityURI="http://purl.org/dc/dcmitype/Dataset">Dataset</mods:form>
+					<mods:internetMediaType>image/tiff</mods:internetMediaType>
+				</mods:physicalDescription>
+				<mods:abstract>${Abstract}  Acquisiton Information: This dataset is a ${sizeX} (X) by ${sizeY} (Y) by ${sizeZ} (Z) pixel array. There are ${sizeC} channel(s) collected at ${sizeT} second(s).  The imaging system utilized is a Nikon Elements laser scanning microscope located at Wisconsin Institute of Discovery's 3D Microscopy Niche.</mods:abstract>
+				<mods:subject>
+					<mods:topic>${kw1}</mods:topic>
+				</mods:subject>
+				<mods:subject>
+					<mods:topic>${kw2}</mods:topic>
+				</mods:subject>
+				<mods:subject>
+					<mods:topic>${kw3}</mods:topic>
+				</mods:subject>
+				<mods:relatedItem displayLabel="Part of" type="host">
+					<mods:titleInfo>
+						<mods:title>Laboratory for Optical and Computational Instrumentation (LOCI) Datasets</mods:title>
+					</mods:titleInfo>
+				</mods:relatedItem>
+				<mods:identifier type="urn">lsid:loci.wisc.edu:Dataset:LOCI-3DNICHE${submissionNumber}</mods:identifier>
+				<mods:location>
+					<mods:url access="preview" usage="primary">http://open.microscopy.wisc.edu/forward/adds/LOCI-3DNICHE${submissionNumber}.jpg</mods:url>
+				</mods:location>
+				<mods:accessCondition type="use and reproduction">The image displayed is a thumbnail, for information on obtaining the full dataset contact ${firstName} ${lastName} at ${email}.</mods:accessCondition>
+ 			</mods:mods>
+		</xmlData>
+	</mdWrap>
+</dmdSec>
+<fileSec>
+	<fileGrp ID="LOCI-3DNICHE${submissionNumber}-DISSEMINATOR">
+		<file MIMETYPE="image/jpeg" USE="thumb" ID="LOCI-3DNICHE${submissionNumber}-thumb">
+			<FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="http://open.microscopy.wisc.edu/forward/adds/LOCI-3DNICHE${submissionNumber}.jpg"/>
+		</file>
+	</fileGrp>
+</fileSec>
+<structMap ID="LOCI-3DNICHE${submissionNumber}-STRUCTMAP">
+	<div ID="LOCI-3DNICHE${submissionNumber}-STRUCT" DMDID="LOCI-3DNICHE${submissionNumber}-BIB">
+		<fptr FILEID="LOCI-3DNICHE${submissionNumber}-thumb"/>
+	</div>
+</structMap>
+</mets>
+
+

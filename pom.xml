@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-v4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>loci</groupId>
+		<artifactId>pom-loci</artifactId>
+		<version>1.1</version>
+	</parent>
+
+	<artifactId>wid-3dniche</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<name>WID 3D Niche</name>
+	<description>Support code for the 3D Discovery Niche at the Wisconsin Institutes for Discovery.</description>
+	<url>http://3dniche.wisc.edu/</url>
+	<inceptionYear>2012</inceptionYear>
+
+	<licenses>
+		<license>
+			<name>GPL 2 or later</name>
+			<url>http://www.gnu.org/licenses/gpl-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<dependencies>
+		<dependency>
+			<groupId>loci</groupId>
+			<artifactId>loci-common</artifactId>
+			<version>4.4-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij-ext</artifactId>
+			<version>2.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.7</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<configuration>
+					<licenseName>gpl_v2</licenseName>
+					<inceptionYear>2012</inceptionYear>
+					<organizationName>Board of Regents of the University of Wisconsin-Madison.</organizationName>
+					<projectName>Support code for the 3D Niche at the Wisconsin Institutes for Discovery.</projectName>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<packageName>loci.niche</packageName>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<developers>
+		<developer>
+			<id>jtpalmer</id>
+			<name>Jason Palmer</name>
+			<email>jtpalmer@wisc.edu</email>
+			<url>http://loci.wisc.edu/people/jason-palmer</url>
+			<organization>UW-Madison LOCI</organization>
+			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>-6</timezone>
+		</developer>
+		<developer>
+			<id>ctrueden</id>
+			<name>Curtis Rueden</name>
+			<email>ctrueden@wisc.edu</email>
+			<url>http://loci.wisc.edu/people/curtis-rueden</url>
+			<organization>UW-Madison LOCI</organization>
+			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>-6</timezone>
+		</developer>
+	</developers>
+
+	<!-- NB: for project parent, in case of partial checkout -->
+	<repositories>
+		<repository>
+			<id>loci.releases</id>
+			<url>http://dev.loci.wisc.edu/maven2/releases</url>
+		</repository>
+		<repository>
+			<id>loci.snapshots</id>
+			<url>http://dev.loci.wisc.edu/maven2/snapshots</url>
+		</repository>
+	</repositories>
+
+</project>
