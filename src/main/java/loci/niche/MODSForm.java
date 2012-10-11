@@ -52,9 +52,6 @@ public class MODSForm extends DynamicPlugin {
 	@Parameter(label = "Last name")
 	protected String lastName;
 
-	@Parameter(label = "E-mail address")
-	protected String email;
-
 	@Parameter(label = "Date acquired (in YYYY-MM-DD format)")
 	protected String date;
 

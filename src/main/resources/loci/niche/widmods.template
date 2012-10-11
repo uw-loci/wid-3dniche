@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-<mets xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd"
-OBJID="urn:lsid:loci.wisc.edu:Dataset:LOCI-3DNICHE${submissionNumber}" LABEL="Title" 
-xmlns:xlink="http://www.w3.org/1999/xlink"
-xmlns:mets="http://http://www.loc.gov/METS/"
-xmlns:mods="http://www.loc.gov/mods/v3"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xmlns="http://www.loc.gov/METS/">
+<mets xmlns="http://www.loc.gov/METS/" 
+      xmlns:xlink="http://www.w3.org/1999/xlink" 
+      xmlns:SA="http://www.openmicroscopy.org/Schemas/SA/2011-06" 
+      xmlns:ome="http://www.openmicroscopy.org/Schemas/OME/2011-06" 
+      xmlns:mods="http://www.loc.gov/mods/v3" 
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xsi:schemaLocation="http://www.loc.gov/METS/ http://digital.library.wisc.edu/1711.dl/XMLSchema-UWDC-METS-1.9 http://www.loc.gov/mods/v3 http://digital.library.wisc.edu/1711.dl/XMLSchema-UWDC-MODS-3.4" 
+      OBJID="urn:lsid:loci.wisc.edu:Dataset:LOCI-3DNICHE${submissionNumber}" 
+      LABEL="${title}">
 
 
 <dmdSec ID="LOCI-3DNICHE${submissionNumber}-BIB">
 	<mdWrap MIMETYPE="text/xml" MDTYPE="MODS" LABEL="MODS">
 		<xmlData>
-			<mods:mods>
+			<mods:mods xmlns:mods="http://www.loc.gov/mods/v3">
 				<mods:titleInfo>
 					<mods:title>${title}</mods:title>
 				</mods:titleInfo>
@@ -29,7 +31,7 @@ xmlns="http://www.loc.gov/METS/">
 
 				</mods:originInfo>
 				<mods:physicalDescription>
-					<mods:form authority="dct" authorityURI="http://purl.org/dc/dcmitype/Dataset">Dataset</mods:form>
+					<mods:form authority="dct">Dataset</mods:form>
 					<mods:internetMediaType>image/tiff</mods:internetMediaType>
 				</mods:physicalDescription>
 				<mods:abstract>${Abstract}  Acquisiton Information: This dataset is a ${sizeX} (X) by ${sizeY} (Y) by ${sizeZ} (Z) pixel array. There are ${sizeC} channel(s) collected at ${sizeT} second(s).  The imaging system utilized is a Nikon Elements laser scanning microscope located at Wisconsin Institute of Discovery's 3D Microscopy Niche.</mods:abstract>
@@ -51,21 +53,69 @@ xmlns="http://www.loc.gov/METS/">
 				<mods:location>
 					<mods:url access="preview" usage="primary">http://open.microscopy.wisc.edu/forward/adds/LOCI-3DNICHE${submissionNumber}.jpg</mods:url>
 				</mods:location>
-				<mods:accessCondition type="use and reproduction">The image displayed is a thumbnail, for information on obtaining the full dataset contact ${firstName} ${lastName} at ${email}.</mods:accessCondition>
+				<mods:accessCondition type="rightsOwnership">© The Board of Regents of the University of Wisconsin</mods:accessCondition>
+				<mods:accessCondition type="useAndReproduction">This image is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported License (CC BY-NC 3.0). More information on this license can be found at http://creativecommons.org/licenses/by-nc/3.0/</mods:accessCondition>
+                <mods:accessCondition type="restrictionOnAccess" displayLabel="Access">The image displayed is a thumbnail, for information on obtaining the full dataset contact LOCI at info@loci.wisc.edu</mods:accessCondition>
+                <mods:recordInfo>
+                	<mods:recordIdentifier>LOCI-3DNICHE${submissionNumber}-BIB</mods:recordIdentifier>
+                    <mods:languageOfCataloging>
+                    	<mods:languageTerm type="code" authority="iso639-2b">eng</mods:languageTerm>
+                    </mods:languageOfCataloging>
+                    <mods:recordOrigin>University of Wisconsin--Madison. Laboratory for Optical and Computational Instrumentation.</mods:recordOrigin>
+                </mods:recordInfo>    
  			</mods:mods>
 		</xmlData>
 	</mdWrap>
 </dmdSec>
+<dmdSec ID="LOCI-3DNICHE${submissionNumber}-Image1-DC">
+    <mdWrap MIMETYPE="text/xml" MDTYPE="DC" LABEL="Dublin Core Record for this object">
+        <xmlData>
+            <oai_dc:dc xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+                <dc:title>${title}</dc:title>
+            	<dc:identifier>LOCI-3DNICHE${submissionNumber}-Image1</dc:identifier>
+        	</oai_dc:dc>
+    	</xmlData>
+	</mdWrap>
+</dmdSec>
+<amdSec ID="LOCI-3DNICHE${submissionNumber}-ORIGIN">
+	<digiprovMD ID="LOCI-3DNICHE${submissionNumber}-ORIGIN-PROVO">
+		<mdWrap MIMETYPE="text/xml" MDTYPE="OTHER" OTHERMDTYPE="UNSPECIFIED" LABEL="ORIGIN">
+			<xmlData>
+				<uwdcProv:origin xmlns:uwdcProv="http://digital.library.wisc.edu/1711.dl/UWDC-Prov" xmlns:premis="info:lc/xmlns/premis-v2" xsi:schemaLocation="http://digital.library.wisc.edu/1711.dl/UWDC-Prov http://digital.library.wisc.edu/1711.dl/XMLSchema-UWDC-Prov-1.1 info:lc/xmlns/premis-v2 http://digital.library.wisc.edu/1711.dl/XMLSchema-PREMIS-2.1">
+					<uwdcProv:projectID>LOCI</uwdcProv:projectID>
+					<uwdcProv:localID>LOCI-3DNICHE${submissionNumber}</uwdcProv:localID>
+					<uwdcProv:submitter>
+						<premis:agent>
+							<premis:agentIdentifier>
+								<premis:agentIdentifierType>UWDC Agent ID</premis:agentIdentifierType>
+								<premis:agentIdentifierValue>UWLOCI</premis:agentIdentifierValue>
+							</premis:agentIdentifier>
+							<premis:agentName>Laboratory for Optical and Computational Instrumentation (LOCI).</premis:agentName>
+						</premis:agent>
+					</uwdcProv:submitter>
+				</uwdcProv:origin>
+			</xmlData>
+		</mdWrap>
+	</digiprovMD>
+</amdSec>
 <fileSec>
-	<fileGrp ID="LOCI-3DNICHE${submissionNumber}-DISSEMINATOR">
-		<file MIMETYPE="image/jpeg" USE="thumb" ID="LOCI-3DNICHE${submissionNumber}-thumb">
+	<fileGrp ID="LOCI-3DNICHE${submissionNumber}-DISSEMINATORS">
+		<file MIMETYPE="image/jpeg" USE="visualrepresentation" ID="LOCI-3DNICHE${submissionNumber}-visualrepresentation">
 			<FLocat LOCTYPE="URL" xlink:type="simple" xlink:href="http://open.microscopy.wisc.edu/forward/adds/LOCI-3DNICHE${submissionNumber}.jpg"/>
+		</file>
+	</fileGrp>
+	<fileGrp ID="LOCI-3DNICHE${submissionNumber}-Image1-DISSEMINATORS">>
+		<file MIMETYPE="image/jpeg" USE="reference" ID="LOCI-3DNICHE${submissionNumber}-Image1-reference">
+			<FLocat LOCTYPE="URL" xlink:type="simple"  xlink:href="http://open.microscopy.wisc.edu/forward/adds/LOCI-3DNICHE${submissionNumber}.jpg"/>
 		</file>
 	</fileGrp>
 </fileSec>
 <structMap ID="LOCI-3DNICHE${submissionNumber}-STRUCTMAP">
 	<div ID="LOCI-3DNICHE${submissionNumber}-STRUCT" DMDID="LOCI-3DNICHE${submissionNumber}-BIB">
-		<fptr FILEID="LOCI-3DNICHE${submissionNumber}-thumb"/>
+		<fptr FILEID="LOCI-3DNICHE${submissionNumber}-visualrepresentation"/>
+		<div ID="LOCI-3DNICHE${submissionNumber}-Image1-STRUCT" ORDER="1" DMDID="LOCI-3DNICHE${submissionNumber}-Image1-DC">
+			<fptr FILEID="LOCI-3DNICHE${submissionNumber}-Image1-reference"/>
+		</div>
 	</div>
 </structMap>
 </mets>
