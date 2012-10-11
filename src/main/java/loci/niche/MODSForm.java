@@ -22,11 +22,10 @@
 
 package loci.niche;
 
-import loci.common.xml.XMLTools;
-import imagej.ext.module.ItemIO;
-import imagej.ext.plugin.DynamicPlugin;
-import imagej.ext.plugin.Parameter;
-import imagej.ext.plugin.Plugin;
+import imagej.command.DynamicCommand;
+import imagej.module.ItemIO;
+import imagej.plugin.Parameter;
+import imagej.plugin.Plugin;
 
 /**
  * Populates a MODS template for the WID 3D Niche system.
@@ -35,7 +34,7 @@ import imagej.ext.plugin.Plugin;
  * @author Curtis Rueden
  */
 @Plugin(menuPath = "Plugins>WID>MODS Form", headless = true)
-public class MODSForm extends DynamicPlugin {
+public class MODSForm extends DynamicCommand {
 
 	// -- Constants --
 

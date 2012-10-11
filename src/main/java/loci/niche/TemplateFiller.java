@@ -22,8 +22,8 @@
 
 package loci.niche;
 
-import imagej.ext.module.Module;
-import imagej.ext.module.ModuleItem;
+import imagej.module.Module;
+import imagej.module.ModuleItem;
 
 import java.io.StringWriter;
 import java.util.Properties;
