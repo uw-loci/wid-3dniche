@@ -38,7 +38,7 @@ public class MODSForm extends DynamicCommand {
 
 	// -- Constants --
 
-	private static final String TEMPLATE = "widmods.template";
+	private static final String TEMPLATE = "/loci/niche/widmods.template";
 
 	// -- Parameters --
 
