@@ -23,8 +23,6 @@
 package loci.niche;
 
 import imagej.ImageJ;
-import imagej.command.CommandService;
-import imagej.ui.UIService;
 
 /**
  * Simple test class for the {@link MODSForm} command.
@@ -34,16 +32,13 @@ import imagej.ui.UIService;
 public class Main {
 
 	public static void main(final String... args) {
-		final ImageJ context = ImageJ.createContext();
+		final ImageJ ij = new ImageJ();
 
 		// show the UI
-		final UIService uiService = context.getService(UIService.class);
-		uiService.createUI();
+		ij.ui().showUI();
 
 		// display the MODS form
-		final CommandService commandService =
-			context.getService(CommandService.class);
-		commandService.run(MODSForm.class);
+		ij.command().run(MODSForm.class);
 	}
 
 }

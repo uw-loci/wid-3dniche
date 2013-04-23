@@ -22,10 +22,12 @@
 
 package loci.niche;
 
+import imagej.command.Command;
 import imagej.command.DynamicCommand;
-import imagej.module.ItemIO;
-import imagej.plugin.Parameter;
-import imagej.plugin.Plugin;
+
+import org.scijava.ItemIO;
+import org.scijava.plugin.Parameter;
+import org.scijava.plugin.Plugin;
 
 /**
  * Populates a MODS template for the WID 3D Niche system.
@@ -33,7 +35,8 @@ import imagej.plugin.Plugin;
  * @author Jason Palmer
  * @author Curtis Rueden
  */
-@Plugin(menuPath = "Plugins>WID>MODS Form", headless = true)
+@Plugin(type = Command.class, menuPath = "Plugins>WID>MODS Form",
+	headless = true)
 public class MODSForm extends DynamicCommand {
 
 	// -- Constants --
