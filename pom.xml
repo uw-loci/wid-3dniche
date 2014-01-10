@@ -94,6 +94,13 @@
 		</developer>
 	</developers>
 
+	<scm>
+		<connection>scm:git:git://github.com/uw-loci/wid-3dniche</connection>
+		<developerConnection>scm:git:git@github.com:uw-loci/wid-3dniche</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/uw-loci/wid-3dniche</url>
+	</scm>
+
 	<repositories>
 		<!-- NB: for project parent -->
 		<repository>
