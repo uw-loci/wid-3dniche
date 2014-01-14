@@ -2,7 +2,8 @@
  * #%L
  * Support code for the 3D Niche at the Wisconsin Institutes for Discovery.
  * %%
- * Copyright (C) 2012 Board of Regents of the University of Wisconsin-Madison.
+ * Copyright (C) 2012 - 2014 Board of Regents of the University of
+ * Wisconsin-Madison.
  * %%
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as
