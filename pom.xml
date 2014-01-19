@@ -22,7 +22,7 @@
 
 	<licenses>
 		<license>
-			<name>GPL 2 or later</name>
+			<name>GNU General Public License v2+</name>
 			<url>http://www.gnu.org/licenses/gpl-2.0.txt</url>
 			<distribution>repo</distribution>
 		</license>
@@ -44,13 +44,6 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>license-maven-plugin</artifactId>
-				<configuration>
-					<licenseName>gpl_v2</licenseName>
-				</configuration>
-			</plugin>
-			<plugin>
 				<artifactId>maven-jar-plugin</artifactId>
 				<configuration>
 					<archive>
@@ -58,6 +51,13 @@
 							<packageName>loci.niche</packageName>
 						</manifest>
 					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<configuration>
+					<licenseName>gpl_v2</licenseName>
 				</configuration>
 			</plugin>
 		</plugins>
