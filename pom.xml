@@ -30,10 +30,10 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>${imagej.groupId}</groupId>
+			<groupId>net.imagej</groupId>
 			<artifactId>ij-app</artifactId>
-			<version>${imagej.version}</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.apache.velocity</groupId>
 			<artifactId>velocity</artifactId>
