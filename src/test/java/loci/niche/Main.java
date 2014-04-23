@@ -39,7 +39,7 @@ public class Main {
 		ij.ui().showUI();
 
 		// display the MODS form
-		ij.command().run(MODSForm.class);
+		ij.command().run(MODSForm.class, true);
 	}
 
 }
