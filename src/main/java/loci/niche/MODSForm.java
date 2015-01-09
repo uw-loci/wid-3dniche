@@ -23,10 +23,9 @@
 
 package loci.niche;
 
-import imagej.command.Command;
-import imagej.command.DynamicCommand;
-
 import org.scijava.ItemIO;
+import org.scijava.command.Command;
+import org.scijava.command.DynamicCommand;
 import org.scijava.plugin.Parameter;
 import org.scijava.plugin.Plugin;
 

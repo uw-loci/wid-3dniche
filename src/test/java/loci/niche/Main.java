@@ -23,7 +23,7 @@
 
 package loci.niche;
 
-import imagej.ImageJ;
+import net.imagej.ImageJ;
 
 /**
  * Simple test class for the {@link MODSForm} command.

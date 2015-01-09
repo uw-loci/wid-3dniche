@@ -23,15 +23,14 @@
 
 package loci.niche;
 
-import imagej.module.Module;
-import imagej.module.ModuleItem;
-
 import java.io.StringWriter;
 import java.util.Properties;
 
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
+import org.scijava.module.Module;
+import org.scijava.module.ModuleItem;
 
 /**
  * TODO
