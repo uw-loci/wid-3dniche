@@ -29,32 +29,26 @@
 
 	<developers>
 		<developer>
-			<id>jtpalmer</id>
-			<name>Jason Palmer</name>
-			<email>jtpalmer@wisc.edu</email>
-			<url>http://loci.wisc.edu/people/jason-palmer</url>
-			<organization>UW-Madison LOCI</organization>
-			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
-			<roles>
-				<role>architect</role>
-				<role>developer</role>
-			</roles>
-			<timezone>-6</timezone>
-		</developer>
-		<developer>
 			<id>ctrueden</id>
 			<name>Curtis Rueden</name>
-			<email>ctrueden@wisc.edu</email>
-			<url>http://loci.wisc.edu/people/curtis-rueden</url>
-			<organization>UW-Madison LOCI</organization>
-			<organizationUrl>http://loci.wisc.edu/</organizationUrl>
+			<url>https://imagej.net/User:Rueden</url>
 			<roles>
-				<role>architect</role>
-				<role>developer</role>
+				<role>founder</role>
+				<role>lead</role>
+				<role>maintainer</role>
 			</roles>
-			<timezone>-6</timezone>
 		</developer>
 	</developers>
+	<contributors>
+		<contributor>
+			<name>Jason Palmer</name>
+			<roles><role>founder</role></roles>
+		</contributor>
+		<contributor>
+			<name>Kristin Briney</name>
+			<properties><id>kbriney</id></properties>
+		</contributor>
+	</contributors>
 
 	<scm>
 		<connection>scm:git:git://github.com/uw-loci/wid-3dniche</connection>
