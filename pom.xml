@@ -19,7 +19,6 @@
 	<description>Support code for the 3D Niche at the Wisconsin Institutes for Discovery.</description>
 	<url>http://3dniche.wisc.edu/</url>
 	<inceptionYear>2012</inceptionYear>
-
 	<licenses>
 		<license>
 			<name>GNU General Public License v2+</name>
@@ -27,47 +26,6 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.scijava</groupId>
-			<artifactId>scijava-common</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.velocity</groupId>
-			<artifactId>velocity</artifactId>
-			<version>1.7</version>
-		</dependency>
-
-		<dependency>
-			<groupId>net.imagej</groupId>
-			<artifactId>imagej</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<artifactId>maven-jar-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<packageName>loci.niche</packageName>
-						</manifest>
-					</archive>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>license-maven-plugin</artifactId>
-				<configuration>
-					<licenseName>gpl_v2</licenseName>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 
 	<developers>
 		<developer>
@@ -112,4 +70,44 @@
 		</repository>
 	</repositories>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.scijava</groupId>
+			<artifactId>scijava-common</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<packageName>loci.niche</packageName>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<configuration>
+					<licenseName>gpl_v2</licenseName>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
