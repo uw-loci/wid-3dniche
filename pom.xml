@@ -76,8 +76,8 @@
 		<url>https://github.com/uw-loci/wid-3dniche/issues</url>
 	</issueManagement>
 	<ciManagement>
-		<system>Jenkins</system>
-		<url>https://jenkins.imagej.net/job/wid-3dniche</url>
+		<system>Travis CI</system>
+		<url>https://travis-ci.org/loci/wid-3dniche</url>
 	</ciManagement>
 
 	<properties>
